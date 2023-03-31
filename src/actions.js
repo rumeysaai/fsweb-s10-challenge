@@ -1,18 +1,17 @@
 import axios from "axios";
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 export const NOT_EKLE = "NOT_EKLE"
 export const NOT_SIL = "NOT_SIL"
 
+export const notify = () => toast("Not Eklendi!");
 export function notEkle(not) {
   // ...
-  const notify =()=>toast("Not Eklendi!");
-  notify();
-  return({type: NOT_EKLE, payload: not})
+  return ({ type: NOT_EKLE, payload: not })
 }
 
 export function notSil(notId) {
   // ...
-  return({type: NOT_SIL, payload: notId})
+  return ({ type: NOT_SIL, payload: notId })
 }
 
 export const notEkleAPI = (yeniNot) => dispatch => {
@@ -21,7 +20,6 @@ export const notEkleAPI = (yeniNot) => dispatch => {
     .then((res) => {
       if (res.status === 200) {
         dispatch(notEkle(res.data.json))
-        console.log(res.data)
         // res.data objesi içerisinden ihtiyaç duyduğunuz değeri bulun ve oluşturduğunuz notEkle ile dispatch edin
       }
     })

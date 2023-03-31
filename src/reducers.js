@@ -1,4 +1,4 @@
-import { NOT_EKLE, NOT_SIL } from "./actions";
+import { NOT_EKLE, NOT_SIL, notify } from "./actions";
 
 const s10chLocalStorageKey = "s10ch";
 
@@ -42,6 +42,7 @@ export function reducer(state = baslangicDegerleri, action) {
         ...state,
         notlar: [action.payload, ...state.notlar]
       }
+      notify();
       localStorageStateYaz(s10chLocalStorageKey, newState)
       return newState;
     case NOT_SIL:
