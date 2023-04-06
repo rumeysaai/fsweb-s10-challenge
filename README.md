@@ -1,3 +1,6 @@
+Deploy edilmiş proje:
+
+http://motivation-blog.lovestoblog.com/
 
 
 
