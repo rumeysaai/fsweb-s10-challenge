@@ -14,6 +14,11 @@ const baslangicDegerleri = {
       date: "Mon Apr 03 2023 09:40:27 GMT+0300 (GMT+03:00)",
       body: "Bugün kendimi daha iyi hissediyorum!|Yaz için tatil planı yaptım :)",
     },
+    {
+      id: "75g1Iy48JLehAr0Lr5v3p",
+      date: "Mon Apr 06 2023 09:55:27 GMT+0300 (GMT+03:00)",
+      body: "Bugün kendimi daha motive hissediyorum!|Challenge projemi yazmaya başladım!",
+    },
   ],
 };
 

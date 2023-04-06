@@ -1,3 +1,6 @@
+
+
+
 # Sprint 10 Challenge: Minnet Günlüğü
 
 Bu projede hafta boyunca öğrendiğiniz, `redux` özellikleri, `redux thunk` middleware'i ve `localStorage` ile bir "Minnet günlüğü" yapacaksınız.
